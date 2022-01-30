@@ -1,0 +1,25 @@
+//override all variables first
+$primary: #212aa5;
+$tertiary: goldenrod;
+
+$link-color: goldenrod;
+$link-hover-color: darken($link-color, 20%);
+$visited-color: lighten($link-color, 20%);
+
+
+a{
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $link-hover-color;
+    border-bottom: 1px solid $link-hover-color;
+  }
+
+  &:visited{
+    color: $visited-color;
+    border-color: $visited-color;
+  }
+}
+//import bootstrap library
+@import "bootstrap/bootstrap";

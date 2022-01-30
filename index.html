@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WCTC</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="page.css">
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="waukesha_logo.svg" width="250" height="84">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-item-right">
+
+            <!--academics dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="academicsDropdownTab" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Academics
+                </a>
+                <div class="dropdown-menu" aria-labelledby="academicsDropdownTab">
+                    <a class="dropdown-item" href="#">Programs and Courses</a>
+                    <a class="dropdown-item" href="#">Take a Course</a>
+                    <a class="dropdown-item" href="#">Academic Calendar</a>
+                    <a class="dropdown-item" href="#">Career Connections</a>
+                    <a class="dropdown-item" href="#">Library</a>
+                    <a class="dropdown-item" href="#">Academic Resource</a>
+                    <a class="dropdown-item" href="#">Graduation</a>
+                </div>
+            </li>
+
+            <!--admissions cost dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="AdmissionsCostDropdownTab" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Admissions & Cost
+                </a>
+                <div class="dropdown-menu" aria-labelledby="AdmissionsCostDropdownTab">
+                    <a class="dropdown-item" href="#">Tuition & Aid</a>
+                    <a class="dropdown-item" href="#">Steps to Apply</a>
+                    <a class="dropdown-item" href="#">Transfer Students</a>
+                    <a class="dropdown-item" href="#">International Students</a>
+                    <a class="dropdown-item" href="#">Veterans</a>
+                    <a class="dropdown-item" href="#">New Student Orientation</a>
+                </div>
+            </li>
+
+            <!--campus life dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="campusDropdownTab" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Campus Life
+                </a>
+                <div class="dropdown-menu" aria-labelledby="campusDropdownTab">
+                    <a class="dropdown-item" href="#">Events Calendar</a>
+                    <a class="dropdown-item" href="#">Wellness & Support</a>
+                    <a class="dropdown-item" href="#">Activities & Organizations</a>
+                    <a class="dropdown-item" href="#">Safety & Policies</a>
+                    <a class="dropdown-item" href="#">Dining</a>
+                    <a class="dropdown-item" href="#">Bookstore</a>
+                </div>
+            </li>
+
+            <!--business services dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="businessDropdownTab" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Business Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="businessDropdownTab">
+                    <a class="dropdown-item" href="#">Corporate Training Center</a>
+                    <a class="dropdown-item" href="#">Small Business Center</a>
+                    <a class="dropdown-item" href="#">Community Involvement</a>
+                    <a class="dropdown-item" href="#">Hire WCTC Talent</a>
+                    <a class="dropdown-item" href="#">Facility Rentals</a>
+                </div>
+            </li>
+
+            <!--community dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="communityDropdownTab" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Community
+                </a>
+                <div class="dropdown-menu" aria-labelledby="communityDropdownTab">
+                    <a class="dropdown-item" href="#">Take a Course</a>
+                    <a class="dropdown-item" href="#">Learning in Retirement</a>
+                    <a class="dropdown-item" href="#">Child Development</a>
+                    <a class="dropdown-item" href="#">Student-Provided Services</a>
+                    <a class="dropdown-item" href="#">English as a Second Language</a>
+                    <a class="dropdown-item" href="#">U.S Citizenship</a>
+                </div>
+            </li>
+
+            <!--about dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownTab" role="button" data-toggle="dropdown" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdownTab">
+                    <a class="dropdown-item" href="#">WCTC Facts</a>
+                    <a class="dropdown-item" href="#">Visit WCTC</a>
+                    <a class="dropdown-item" href="#">Leadership</a>
+                    <a class="dropdown-item" href="#">Institutional Effectiveness</a>
+                    <a class="dropdown-item" href="#">Campus & Academic Policies</a>
+                    <a class="dropdown-item" href="#">Forms</a>
+                    <a class="dropdown-item" href="#">Publications</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://eis-prod.ec.wctc.edu/authenticationendpoint/login.do?commonAuthCallerPath=%2Fsamlsso&forceAuth=false&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=1d54f616-d1f5-4d24-924c-75aa9e008376&relyingParty=LUM6P_LuminisPortal&type=samlsso&sp=Lumins+6+Portal&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.wctc.edu/alumni/index.php">Alumni</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.wctc.edu/foundation/index.php">Foundation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.wctc.edu/technology.php">Technology</a>
+            </li>
+
+            <!--search part-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </ul>
+    </div>
+</nav>
+
+
+<!--intro image part-->
+<!--<div class="container-fluid">
+    <div class="jumbotron-fluid">
+        <img src="anesthesia-technology-bl.jpg" style="width: 100%" alt="landing page">
+    </div>
+</div>-->
+<div class="gfg">
+    <img src="anesthesia-technology-bl.jpg" style="width: 100%">
+    <h3 class="first-txt">Anesthesia Technology</h3>
+</div>
+
+
+
+<!--breadcrumbs-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6" style="text-align: center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Academics</a></li>
+                    <li class="breadcrumb-item"><a href="#">Programs and Courses</a></li>
+                    <li class="breadcrumb-item"><a href="#">Program List</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Anesthesia Technology</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+
+
+<!--grid columns-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 align-items-center">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto"></a>
+
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="https://www.wctc.edu/request-information/index.php" class="nav-link active" aria-current="page">Request Information</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/admissions-cost/enroll/steps-to-apply.php" class="nav-link" style="padding-top: 18px">Apply to WCTC</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/about/visit/index.php" class="nav-link" style="padding-top: 18px">Visit Campus</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/academics/programs-courses/course-search/course-search.php" class="nav-link" style="padding-top: 18px;">Course Search</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/contact-us.php" class="nav-link" style="padding-top: 18px">Contact Us</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/staff-directory.php" class="nav-link" style="padding-top: 18px">Staff Directory</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/jobs/index.php" class="nav-link" style="padding-top: 18px">WCTC Jobs</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/about/leadership/district-board/index.php" class="nav-link" style="padding-top: 18px">District Board</a>
+                </li>
+                <li>
+                    <a href="https://catalog.wctc.edu/programs/anesthesia-technology/#requiredcoursestext" class="nav-link" style="padding-top: 18px">Program Courses</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/_site-pdfs/program-spec-pdfs/anesthesia-technology-spec.pdf" class="nav-link" style="padding-top: 18px">Program PDF</a>
+                </li>
+                <li>
+                    <a href="https://studentaid.gov/h/apply-for-aid/fafsa">Financial Aid</a>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <p>Similar Programs</p>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li>
+                    <a href="https://www.wctc.edu/academics/programs-courses/programs/radiography/index.php" class="nav-link" style="padding-top: 18px">Radiography</a>
+                </li>
+                <li>
+                    <a href="https://www.wctc.edu/academics/programs-courses/programs/surgical-technology/index.php" class="nav-link" style="padding-top: 18px">Surgical Technology</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-5">
+            <!--jumbotron-->
+            <div class="jumbotron">
+                <div>
+                    <h4 class="display-4">Program Information</h4>
+                    <hr class="my-4">
+                    <p><strong>Degree Type</strong></p>
+                    <p>64-credit Associate of Applied Science Degree</p>
+                    <p><strong>Program code</strong></p>
+                    <p>10-541-1</p>
+                    <p><strong>Time to Degree</strong></p>
+                    <p>2 years</p>
+                    <p><strong>Start Date</strong></p>
+                    <p>August</p>
+
+                    <p><strong>Ready to Register?</strong> Note the CRN number of the class you want to take, then follow our <a href="https://www.wctc.edu/admissions-cost/enroll/registration-steps.php#heading-d11e119-4"> registration steps</a></p>
+                    <p><strong>Looking for a different semester?</strong> <a href="https://www.wctc.edu/academics/programs-courses/course-search/course-search.php">Start here</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <!--jumbotron-->
+            <div class="jumbotron">
+                <h1 class="display-4">Overview</h1>
+
+                <hr class="my-4">
+
+                <!--accordion-->
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0 active">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Program Overview
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h6><strong>This is a partnership program with Milwaukee Area Technical College.</strong></h6>
+                                <hr>
+                                Working under the direction of the anesthesia provider,
+                                the anesthesia technologist is a vital member of the anesthesia care team.
+                                Learn to anticipate the needs of the patient and the anesthesia provider,
+                                apply aseptic techniques in preparing and handling instruments and supplies for surgical procedures,
+                                operate patient-care equipment and monitor patient vital signs and hemodynamics.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Application Deadlines
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h6><strong>Deadlines To Know</strong></h6>
+                                Fall 2022 Start
+                                <ul>
+                                    <li>Submit application by August 1, 2022</li>
+                                    <li>Complete checklist items by August 8, 2022</li>
+                                </ul>
+                                Spring 2022 Start
+                                <ul>
+                                    <li>This program cannot be started in spring.</li>
+                                </ul>
+                                Summer 2022 Start
+                                <ul>
+                                    <li>This program cannot be started in summer.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Program Cost
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h6><strong>Tuition Costs</strong></h6>
+                                <hr>
+                                The cost of your degree depends on a number of factors, including where you live,
+                                how your program is delivered, how long it takes to finish your program and the financial aid you receive.
+                                Explore current <a href="https://www.wctc.edu/admissions-cost/tuition-aid/index.php">tuition and fees.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">WCTC Bot</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                This bot doesn't actually work, but it would be neat to learn how to make one.
+                Maybe at some point. I've made a discord bot but that's quite different from
+                the ones you see at store pages and whatnot.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--separator-->
+<hr class="my-4">
+<!--separator-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Potential Careers</h5>
+                    <p class="card-text">If you would like to be part of a surgery team that assists patients prior to operations, a role as an anesthesia technologist may be right for you. Those in this field must be organized, cope well with stress and be able to communicate clearly with other members of the medical team.</p>
+                    <ul>
+                        <li>
+                            Anesthesia Technician
+                        </li>
+                        <li>
+                            Anesthesia Technician Supervisor
+                        </li>
+                        <li>
+                            Lead Anesthesia Technician
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Career Salaries</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$34,700 - $57,600 annually</h6>
+                    <p class="card-text"><em>Salary range estimates based on wages for related occupations in Waukesha County as reported by Economic Modeling Specialists International (EMSI). Individual wages may vary based on experience, industry, location and specific job requirements.</em></p>
+                    <p class="card-text">Check the WCTC <a href="https://www.wctc.edu/_site-pdfs/graduate-success-reports/graduate-success-2020.pdf">Graduate Success Report</a> to view our graduates' entry wages.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">High School Eligibility</h5>
+                    <p class="card-text">Partnership programs are not open to high school students.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--separator-->
+<hr class="my-4">
+<!--separator-->
+
+
+
+<div class="container">
+    <h3>How to Apply</h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Step One</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Complete Admissions Steps</h6>
+                    <ul>
+                        <li>
+                            Submit a fillable <a href="https://www.wctc.edu/_site-pdfs/forms/admission-application.pdf">PDF application </a>by email.
+                        </li>
+                        <li>
+                            Submit official high school transcript.
+                        </li>
+                        <li>
+                            Complete <a href="https://www.wctc.edu/academics/academic-resources/testing-services/index.php#heading-d11e125-2"> placement assessment</a> (Reading and Writing).
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>Please note: This program is only available to WCTC district residents.</p>
+                    <p><strong>Questions on the application process?</strong> Visit the <a href="https://www.wctc.edu/admissions-cost/enroll/steps-to-apply.php">Admissions</a> page or contact an <a href="https://www.wctc.edu/admissions-cost/enroll/admissions-advising.php">Admissions Advisor.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Step Two</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Complete General Studies Courses</h6>
+                    <p class="card-text">Complete your <a href="https://catalog.wctc.edu/programs/radiography/#requiredcoursestext">General Studies Courses</a> <strong>Have transfer credit?</strong> Check out an <a href="https://www.wctc.edu/admissions-cost/enroll/admissions-advising.php">Admissions Advisor</a></p>
+                    <p class="card-text"><em>WCTC students who enroll in a partnership program may enroll in general education courses at WCTC, then all credits transfer to Milwaukee Area Technical College (MATC) to complete</em><a href="https://www.matc.edu/course-catalog/healthcare/anesthesia-technology.html">program courses</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Step Three</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Take Pre-Admission Exam</h6>
+                    <p class="card-text">complete the <a href="https://sites.google.com/gmatc.matc.edu/exams">HP-A2 HESI Pre-Admission Exam</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2">
+
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Step Four</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Petition to the Program</h6>
+                    <p class="card-text">After successfully completing these steps and being awarded a seat through the petitioning process, you can begin your core courses. In order to begin core courses, you will need to successfully:</p>
+                    <ul>
+                        <li>
+                            Petition to the Anesthesia program. <em>Petition information coming soon!</em>
+                        </li>
+                        <li>
+                            Complete a <a href="https://www.wctc.edu/academics/programs-courses/programs/nursing-associate-degree/caregiver-background-check.php">background check</a>
+                        </li>
+                    </ul>
+                    <p class="card-text">After successfully completing these steps and being awarded a seat through the petitioning process, you can begin your <a href="https://www.matc.edu/course-catalog/healthcare/anesthesia-technology.html"> core courses MATC</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Step Five</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">After the Program</h6>
+                    <ul>
+                        <li>
+                            Students enrolled in this partnership program will <strong>graduate from Milwaukee Area Technical College</strong>, not WCTC
+                        </li>
+                        <li>
+                            Upon graduating, you will be prepared to take the American Society of Anesthesia Technologists & Technicians (ASATT) National Certification Examination to become certified as an Anesthesia Technologist (Cer.A.T.T.).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<hr class="my-4">
+<!--related certificates card-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p class="nextToCard">Related Certificates</p>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 28rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Health Careers</h5>
+                    <p class="card-text">Explore the various roles and responsibilities within the healthcare industry</p>
+                    <button type="button" class="btn btn-primary" aria-pressed="true"><a href="https://www.wctc.edu/academics/programs-courses/programs/introduction-to-health-careers/index.php">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--separator-->
+<hr class="my-4">
+<!--separator-->
+
+
+
+<!--Credit Opportunities-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card h-100" style="width: 28rem;">
+                <img src="education%20stock%20image.jpg" class="card-img-top" alt="Education Image">
+                <div class="card-body">
+                    <h5 class="card-title">High School Dual Credit</h5>
+                    <p class="card-text">Dual enrollment offers high school students an opportunity to get a head start in high-demand fields while earning college credits.</p>
+                    <button type="button" class="btn btn-primary"><a href="https://www.wctc.edu/academics/programs-courses/high-school-dual-credit/index.php">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card h-100" style="width: 28rem;">
+                <img src="high%20school%20stock%20image.jpg" class="card-img-top" alt="High School Stock Image">
+                <div class="card-body">
+                    <h5 class="card-title">Credit for Prior Learning</h5>
+                    <p class="card-text">You may have the opportunity to obtain credit for the college-level skills and
+                        knowledge you've already acquired through prior coursework, work experience and more.</p>
+                    <button type="button" class="btn btn-primary"><a href="https://www.wctc.edu/admissions-cost/enroll/credit-for-prior-learning/index.php">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--separator-->
+<hr class="my-4">
+<!--separator-->
+
+
+<div class="container">
+    <h3>What Makes This Program Unique?</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card" style="width: 32rem;">
+                <div class="card-body">
+                    <p class="card-text">This partnership allows for Waukesha County area students to gain access to the <a href="https://www.matc.edu/course-catalog/healthcare/anesthesia-technology.html">Milwaukee Area Technical College (MATC) Anesthesia Technology program.</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 32rem;">
+                        <div class="card-body">
+                            <p class="card-text">Take core courses close to home, then complete your degree at our partner college.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 32rem;">
+                                <div class="card-body">
+                                    <p class="card-text">Upon graduating, be prepared to take the <a href="https://www.asatt.org/index.php/certification/national-certification-examination-handbook">American Society of Anesthesia Technologists & Technicians (ASATT) National Certification Examination </a>to become certified as an Anesthesia Technologist (Cer.A.T.T.).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="anesthesia-technology-b.jpg" alt="anesthesia guy">
+        </div>
+    </div>
+</div>
+
+<!--separator-->
+<hr class="my-4">
+<!--separator-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="jumbotron">
+                <div class="card" style="width: 29rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Program Specific Transfer Agreements</h5>
+                        <p class="card-text">There are no credit transfer agreements for this program at this time. For more information, contact your <a href="https://www.wctc.edu/academics/program-advice/academic-advising/index.php">academic advisor</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="jumbotron">
+                <div class="card" style="width: 29rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">General Transfer Agreements</h5>
+                        <p class="card-text">There are no credit transfer agreements for this program at this time. For more information, contact your <a href="https://www.wctc.edu/academics/program-advice/academic-advising/index.php">academic advisor</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--separator-->
+<hr class="my-4">
+<!--separator-->
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Waukesha County Technical College</h5>
+                <p>Have any other form of question that you might want to ask?<br> Press the button down below to talk to a bot.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Talk to bot
+                </button>
+
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-lg-6 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Socials</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.facebook.com/wctcfb/">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/wctc?lang=en">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/waukeshacountytech">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/school/waukesha-county-technical-college/">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/wctcedu/">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Waukesha County Technical College</div>
+    <!-- Copyright -->
+
+</footer>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
